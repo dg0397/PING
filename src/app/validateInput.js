@@ -31,6 +31,8 @@ export function alertInput(){
 //this functions checks the input
 export function checkInputs(){
    
+    const input = document.querySelector('input');
+    const alertDiv = document.querySelector('.alert');
 
         
     if(input.value.length === 0){

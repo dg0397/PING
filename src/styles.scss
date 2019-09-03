@@ -61,8 +61,8 @@ body{
                 @include input("email")
             }
 
-            input[type="submit"]{
-                @include input("submit");
+            .btn{
+                @include input("button");
             }
 
             @media screen and(min-width:1024px) {

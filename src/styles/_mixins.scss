@@ -55,7 +55,7 @@
         box-sizing: border-box;
         box-shadow: none;
     } 
-    @else if $type == submit{
+    @else{
         @include btn($blue, $bg-white, $light-blue, $dark-blue)
     } 
 }

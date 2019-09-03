@@ -6,7 +6,7 @@ import {alertInput,checkInputs,changeColorText} from "./app/validateInput"
 importImages();
 
 const input = document.querySelector('input');//select all inputs
-const btn = document.querySelector('input[type="submit"]'); //select the button
+const btn = document.querySelector('.btn'); //select the button
 const form = document.querySelector('form');
 
 form.reset();
