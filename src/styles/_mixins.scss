@@ -13,6 +13,7 @@
     background:$bg-btn ;
     border-radius: 30px;
     border:none;
+    box-shadow: none;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.1s ease-in;
     cursor: pointer;
@@ -52,6 +53,7 @@
         border: 1px solid $pale-blue;
         border-radius: 30px;
         box-sizing: border-box;
+        box-shadow: none;
     } 
     @else if $type == submit{
         @include btn($blue, $bg-white, $light-blue, $dark-blue)
