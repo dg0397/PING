@@ -56,13 +56,15 @@ body{
             & > * {
                 margin-bottom: 1rem;
             }
+            .container__input{
 
-            input[type="email"]{
-                @include input("email")
-            }
+             input[type="email"]{
+                @include input();
+             }
 
-            .btn{
-                @include input("button");
+             button{
+                @include btn($blue, $bg-white, $light-blue, $dark-blue);
+             }
             }
 
             @media screen and(min-width:1024px) {
