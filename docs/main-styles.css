@@ -82,7 +82,7 @@ body {
         height: 2.5rem;
         text-align: center;
         font-size: .9rem;
-        font-weight: 700;
+        font-weight: 600;
         text-transform: capitalize;
         color: white;
         background: #4f7df3;
@@ -141,4 +141,18 @@ footer {
     margin-top: 1.5rem; }
   footer .attribution a {
     color: #3e52a3; }
+
+/*These classes are add with js*/
+.alert {
+  font-size: 12px;
+  text-align: center;
+  color: #ff5263;
+  font-style: italic; }
+  @media screen and (min-width: 1024px) {
+    .alert {
+      text-align: left;
+      margin-left: 1rem; } }
+
+.input-alert {
+  border: 1px solid #ff5263 !important; }
 

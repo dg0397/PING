@@ -1,20 +1,5 @@
 @import "./variables";
 
-@mixin header($bg-color,$color-text-1,$color-text-2){
-    padding: 1rem;
-    background-color: $bg-color;
-    h2{
-        color:$color-text-1;
-    }
-    p{
-        color:$color-text-2;
-        line-height: 2rem
-    }
-    > * {
-        margin-bottom: 1rem;
-    }
-}
-
 
 @mixin btn($bg-btn,$color-txt-btn,$color-bg-hover,$color-bg-active){
     
@@ -22,7 +7,7 @@
     height: 2.5rem;
     text-align: center;
     font-size: .9rem;
-    font-weight: 700;
+    font-weight: $font-w-semi-bold;
     text-transform: capitalize;
     color: $color-txt-btn;
     background:$bg-btn ;

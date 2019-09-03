@@ -4,10 +4,11 @@
 body{
     background: $bg-white;
     color:$very-dark-blue;
-    font-size: $font-size
+    font-size: $font-size;
 }
 
 .container__main{
+
     padding-top: 3rem;
     margin:0 auto;
     text-align: left;
@@ -18,6 +19,7 @@ body{
     @media screen and(min-width:1024px) {
         max-width: 720px;
     }
+
     header{
         
         .container__logo{
@@ -38,32 +40,43 @@ body{
             margin-bottom:1rem; 
         }
     }
+
     .container__form{
         margin: 1rem auto;
+
         .container__inputs{
+
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 100%;
             padding: 1.5rem;
             border: none;
+
             & > * {
                 margin-bottom: 1rem;
             }
+
             input[type="email"]{
                 @include input("email")
             }
+
             input[type="submit"]{
                 @include input("submit");
             }
+
             @media screen and(min-width:1024px) {
                 flex-direction: row;
+
                 & > * {
+
                     margin-right: 1rem;
                     margin-bottom: 0;
+
                     &:nth-child(1){
                         width: 60%;
                     }
+
                     &:nth-child(2){
                         width: 30%;
                     }
@@ -73,13 +86,18 @@ body{
             }
         }
     }
+
     .container__hero{
+
         width: 100%;
         @include image();
     }
     .contact{
+
         margin: 3rem auto;
+
         & > *{
+
             margin-right: .5rem;
             padding: .8rem;
             color:$blue;
@@ -88,10 +106,12 @@ body{
             transition: all .25s ease;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
             font-size: 16px;
+
             i{
                 width: 16px;
                 height: 16px
             }
+
             &:hover{
                 background: $blue;
                 color:$bg-white;
@@ -106,4 +126,19 @@ footer{
     padding-bottom: 1rem;
     .attribution { font-size: 11px; text-align: center; margin-top: 1.5rem ; }
     .attribution a { color: hsl(228, 45%, 44%); }
+}
+
+/*These classes are add with js*/
+.alert{
+    font-size: 12px;
+    text-align: center;
+    color: $ligh-red;
+    font-style: italic;
+    @media screen and(min-width:1024px) {
+        text-align: left;
+        margin-left: 1rem;
+    }
+}
+.input-alert{
+    border: 1px solid $ligh-red !important;
 }
