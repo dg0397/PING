@@ -12,6 +12,7 @@ export function alertInput(){
         
         alertDiv.textContent = "Whoops! It looks like you forgot to add your email"; // write the message in the div
         alertDiv.classList.add('alert'); //add the alert class to the div
+        alertDiv.setAttribute("role", "alert");
 
         this.classList.add('input-alert'); //add the input-alert class to the input
     
@@ -19,12 +20,13 @@ export function alertInput(){
         
         alertDiv.textContent = 'Please provide a valid email address'; //check the email and write a message if email is wrong
         alertDiv.classList.add('alert'); //add the alert class to the div
+        alertDiv.setAttribute("role", "alert");
     
     }else{
     
         alertDiv.textContent = ''; // remove the message in the div
         this.classList.remove('input-alert'); // remove the input-alert class
-        
+        alertDiv.removeAttribute("role", "alert");
     }
 }
 
@@ -39,6 +41,7 @@ export function checkInputs(){
         
         alertDiv.textContent = "Whoops! It looks like you forgot to add your email";// write the message in the div
         alertDiv.classList.add('alert');//add the alert class to the div
+        alertDiv.setAttribute("role", "alert");
 
         input.classList.add('input-alert');//add the input-alert class to the input
 
