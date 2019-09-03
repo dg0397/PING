@@ -1,0 +1,74 @@
+@import "./variables";
+
+@mixin header($bg-color,$color-text-1,$color-text-2){
+    padding: 1rem;
+    background-color: $bg-color;
+    h2{
+        color:$color-text-1;
+    }
+    p{
+        color:$color-text-2;
+        line-height: 2rem
+    }
+    > * {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@mixin btn($bg-btn,$color-txt-btn,$color-bg-hover,$color-bg-active){
+    
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $color-txt-btn;
+    background:$bg-btn ;
+    border-radius: 30px;
+    border:none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+    
+    &:hover{
+        background:$color-bg-hover;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    &:active{
+        margin-top: .1rem;
+        background: $color-bg-active;
+    }
+}
+
+
+@mixin image {
+    img{
+        width: 100%;
+        height: auto;
+        display: block
+    }
+}
+@mixin  input($type) {
+    @if $type == email{
+        width: 100%;
+        height: 2.5rem;
+        margin-bottom: .5rem;
+        padding: .5rem 1.5rem;
+        font-size: .7rem;
+        font-weight: $font-w-light;
+        text-align: start;
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        color:$gray;
+        border: 1px solid $pale-blue;
+        border-radius: 30px;
+        box-sizing: border-box;
+    } 
+    @else if $type == submit{
+        @include btn($blue, $bg-white, $light-blue, $dark-blue)
+    } 
+}
