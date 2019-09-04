@@ -51,40 +51,33 @@ body{
             justify-content: center;
             width: 100%;
             padding: 1.5rem;
-            border: none;
 
-            & > * {
-                margin-bottom: 1rem;
-            }
             .container__input{
-
-             input[type="email"]{
-                @include input();
-             }
-
-             button{
-                @include btn($blue, $bg-white, $light-blue, $dark-blue);
-             }
-            }
-
-            @media screen and(min-width:1024px) {
-                flex-direction: row;
-
-                & > * {
-
-                    margin-right: 1rem;
-                    margin-bottom: 0;
-
-                    &:nth-child(1){
+                margin-bottom: 1rem;
+                &:first-child{
+                    input[type="email"]{
+                        @include input();
+                    }
+                    @media screen and(min-width:1024px){
                         width: 60%;
                     }
-
-                    &:nth-child(2){
+                }
+                &:last-child{
+                    button{
+                        @include btn($blue, $bg-white, $light-blue, $dark-blue);
+                    }
+                    @media screen and(min-width:1024px){
                         width: 30%;
                     }
                 }
-                
-                
+                @media screen and(min-width:1024px){
+                    margin-right: 1rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            @media screen and(min-width:1024px) {
+                flex-direction: row;    
             }
         }
     }

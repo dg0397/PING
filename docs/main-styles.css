@@ -57,58 +57,60 @@ body {
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      padding: 1.5rem;
-      border: none; }
-      .container__main .container__form .container__inputs > * {
+      padding: 1.5rem; }
+      .container__main .container__form .container__inputs .container__input {
         margin-bottom: 1rem; }
-      .container__main .container__form .container__inputs .container__input input[type="email"] {
-        width: 100%;
-        height: 2.5rem;
-        margin-bottom: .5rem;
-        padding: .5rem 1.5rem;
-        font-size: .7rem;
-        font-weight: 300;
-        text-align: start;
-        -webkit-appearance: textfield;
-        background-color: white;
-        -webkit-rtl-ordering: logical;
-        cursor: text;
-        color: #969696;
-        border: 1px solid #c2d3ff;
-        border-radius: 30px;
-        box-sizing: border-box;
-        box-shadow: none; }
-      .container__main .container__form .container__inputs .container__input button {
-        width: 100%;
-        height: 2.5rem;
-        text-align: center;
-        font-size: .9rem;
-        font-weight: 600;
-        text-transform: capitalize;
-        color: white;
-        background: #4f7df3;
-        border-radius: 30px;
-        border: none;
-        box-shadow: none;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.1s ease-in;
-        cursor: pointer; }
-        .container__main .container__form .container__inputs .container__input button:hover {
-          background: #7096f5;
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); }
-        .container__main .container__form .container__inputs .container__input button:active {
-          margin-top: .1rem;
-          background: #3268f1; }
+        .container__main .container__form .container__inputs .container__input:first-child input[type="email"] {
+          width: 100%;
+          height: 2.5rem;
+          margin-bottom: .5rem;
+          padding: .5rem 1.5rem;
+          font-size: .7rem;
+          font-weight: 300;
+          text-align: start;
+          -webkit-appearance: textfield;
+          background-color: white;
+          -webkit-rtl-ordering: logical;
+          cursor: text;
+          color: #969696;
+          border: 1px solid #c2d3ff;
+          border-radius: 30px;
+          box-sizing: border-box;
+          box-shadow: none; }
+        @media screen and (min-width: 1024px) {
+          .container__main .container__form .container__inputs .container__input:first-child {
+            width: 60%; } }
+        .container__main .container__form .container__inputs .container__input:last-child button {
+          width: 100%;
+          height: 2.5rem;
+          text-align: center;
+          font-size: .9rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: white;
+          background: #4f7df3;
+          border-radius: 30px;
+          border: none;
+          box-shadow: none;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.1s ease-in;
+          cursor: pointer; }
+          .container__main .container__form .container__inputs .container__input:last-child button:hover {
+            background: #7096f5;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); }
+          .container__main .container__form .container__inputs .container__input:last-child button:active {
+            margin-top: .1rem;
+            background: #3268f1; }
+        @media screen and (min-width: 1024px) {
+          .container__main .container__form .container__inputs .container__input:last-child {
+            width: 30%; } }
+        @media screen and (min-width: 1024px) {
+          .container__main .container__form .container__inputs .container__input {
+            margin-right: 1rem;
+            margin-bottom: 0; } }
       @media screen and (min-width: 1024px) {
         .container__main .container__form .container__inputs {
-          flex-direction: row; }
-          .container__main .container__form .container__inputs > * {
-            margin-right: 1rem;
-            margin-bottom: 0; }
-            .container__main .container__form .container__inputs > *:nth-child(1) {
-              width: 60%; }
-            .container__main .container__form .container__inputs > *:nth-child(2) {
-              width: 30%; } }
+          flex-direction: row; } }
   .container__main .container__hero {
     width: 100%; }
     .container__main .container__hero img {
