@@ -36,7 +36,14 @@ module.exports = {
                             ]
                         }
                     },
-                    'sass-loader',
+                    {
+                        loader: "sass-loader",
+                        query:  {
+                            outputStyle: 'expanded',
+                            sourceMap: true,
+                            sourceMapContents: true
+                        }
+                    },
                 ],
             },
             {
